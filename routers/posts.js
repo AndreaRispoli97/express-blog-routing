@@ -1,10 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const postArray = require('../postArray');
+
+router.get('/', function (req, res){
+    res.json(postArray);
+});
 
 // // index
-router.get('/', function (req, res) {
-    res.send('Lista del dolce');
-    });
+// router.get('/', function (req, res) {
+//     res.send('Lista del dolce');
+//     });
 //     // show
 router.get('/:id', function (req, res) {
     res.send('Dettagli del dolce ' + req.params.id);

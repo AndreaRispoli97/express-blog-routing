@@ -2,12 +2,15 @@ console.log('AAAA');
 
 const express = require('express');
 const app = express();
-// const postArray = require('./postArray');
+//const postArray = require('./postArray');
 const port = 3556
 const router = require('./routers/posts');
 
-app.use('/posts', router);
 app.use(express.static('public'));
+
+
+app.use('/posts', router);
+
 
 // app.get('/', (req,res) => {
 //     res.send('postArray');
