@@ -32,3 +32,16 @@ router.delete('/:id', function (req, res) {
     });
 
 module.exports = router;
+
+
+//tentativo secondo bonus
+// router.get('/:id', function (req, res) {
+//     posts.forEach(e => {
+//         if(e.slug=== req.params.id){
+//             res.json(e);
+//         } else{
+//             res.json('non trovato')
+//         }
+        
+//     });
+//     });
